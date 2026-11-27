@@ -526,10 +526,6 @@
       list-style: none;
     }
 
-    .services-grid li:last-child {
-      grid-column: 1 / -1;
-    }
-
     .service-card {
       display: grid;
       justify-items: center;
@@ -1172,17 +1168,8 @@
       /* Quatro por linha; a segunda linha (três cards) fica centralizada:
          oito trilhos, cada card ocupa dois, e o quinto começa no segundo. */
       .services-grid {
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 16px;
-      }
-
-      .services-grid li,
-      .services-grid li:last-child {
-        grid-column: span 2;
-      }
-
-      .services-grid li:nth-child(5) {
-        grid-column: 2 / span 2;
       }
 
       .service-card {
